@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:background="@drawable/shape2"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="更换宠物头像"
+        android:textSize="15dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#15658734" />
+
+    <TextView
+        android:id="@+id/mpetPhotograph"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="拍照"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#15658734" />
+
+    <TextView
+        android:id="@+id/maddpetAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="相册"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#15658734" />
+
+    <TextView
+        android:id="@+id/maddpetcancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp" />
+</LinearLayout>

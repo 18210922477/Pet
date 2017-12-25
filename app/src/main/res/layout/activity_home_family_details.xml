@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/show_dl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <!-- ViewPager是一个控件 -->
+
+                    <com.youth.banner.Banner
+                        android:id="@+id/lvp"
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:background="@mipmap/dddd"
+                       />
+
+                    <LinearLayout
+                        android:id="@+id/show_view_dot"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#33000000"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/show_user_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:src="@mipmap/back_gray"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/user_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-20dp"
+                    android:background="#00000000"
+                    android:paddingBottom="10dp" >
+
+                    <ImageView
+                        android:id="@+id/show_iv"
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:layout_marginLeft="10dp"
+                         />
+
+                    <TextView
+                        android:id="@+id/show_famile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/show_iv"
+                        android:text="地址"
+                        android:textSize="20sp" />
+
+                    <RatingBar
+                        android:id="@+id/show_ratingBar"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/show_iv"
+                        android:layout_alignLeft="@+id/show_famile"
+                        android:numStars="5"
+                        android:rating="4.5" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#22330000" >
+                </View>
+
+                <RelativeLayout
+                    android:id="@+id/foster_evaluated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/evaluate" />
+
+                    <TextView
+                        android:id="@+id/show_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/imageView1"
+                        android:text="寄养评价"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/enter" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#22330000"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="寄养服务"
+                    android:textSize="20sp" >
+                </TextView>
+
+                <ListView
+                    android:id="@+id/show_lv_fosterServices"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                  >
+                </ListView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#22330000"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="其他服务"
+                    android:textSize="20sp" >
+                </TextView>
+
+                <ListView
+                    android:id="@+id/show_lv_fosterOtherServices"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    >
+                </ListView>
+
+                <TextView
+                   
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#22330000"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="家庭住址"
+                    android:textSize="20sp" >
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/show_address_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@mipmap/map" />
+
+                    <TextView
+                        android:id="@+id/show_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="北京市昌平区" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#22330000"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="寄养家庭简介"
+                    android:textSize="20sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/show_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="大家好，我是寄养师" >
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" >
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/show_caozuo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#f9f9fb"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <Button
+                android:id="@+id/callperson"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:drawableTop="@mipmap/contact"
+                android:text="联系Ta" />
+
+            <Button
+                android:id="@+id/show_jiyang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="#ff9b02"
+                android:padding="10dp"
+                android:text="预约寄养" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/root_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FFffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/dls_users_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/dls_users_ic"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                >
+            </ImageView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/dls_users_ic" >
+
+                <TextView
+                    android:id="@+id/dls_users_famile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="user"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dls_users_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dls_users_famile"
+                    android:paddingLeft="10dp"
+                    android:text="******"
+                    android:textColor="#BFBFBF" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/enter" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#BFBFBF" />
+
+        <RelativeLayout
+            android:id="@+id/dls_orderinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_item_bg"
+            android:clickable="false"
+            android:focusable="false"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/item_iv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/order_details" />
+
+            <TextView
+                android:id="@+id/item_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/item_iv3"
+                android:text="订单详情"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#BFBFBF"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <RelativeLayout
+            android:id="@+id/dls_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_item_bg"
+            android:clickable="false"
+            android:focusable="false"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/item_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/messages" />
+
+            <TextView
+                android:id="@+id/item_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/item_iv"
+                android:text="消息"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#BFBFBF"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <RelativeLayout
+            android:id="@+id/dls_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_item_bg"
+            android:clickable="false"
+            android:focusable="false"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/item_iv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/time_setting" />
+
+            <TextView
+                android:id="@+id/item_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/item_iv2"
+                android:text="时间设置"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#BFBFBF"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <RelativeLayout
+            android:id="@+id/dls_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_item_bg"
+            android:clickable="false"
+            android:focusable="false"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/item_iv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/service_customization" />
+
+            <TextView
+                android:id="@+id/item_tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/item_iv4"
+                android:text="服务定制"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#BFBFBF" />
+
+        <RelativeLayout
+            android:id="@+id/dls_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_item_bg"
+            android:clickable="false"
+            android:focusable="false"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/item_iv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/perfect_information" />
+
+            <TextView
+                android:id="@+id/item_tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/item_iv6"
+                android:text="设置"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#BFBFBF" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/dls_btn_back_user"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_view_bg"
+                android:padding="10dp"
+                android:text="返回用户操作界面" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

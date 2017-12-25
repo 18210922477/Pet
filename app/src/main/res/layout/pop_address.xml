@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+          <RelativeLayout
+              android:id="@+id/mRelat"
+              android:layout_gravity="center_vertical"
+              android:layout_marginTop="10dp"
+              android:layout_marginBottom="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+            
+            >
+              <TextView
+                  android:id="@+id/mTextView"
+                     android:layout_marginTop="8dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                  android:textSize="18dp"
+                  android:text="附近优先"/>
+              <ImageView
+                  android:id="@+id/mCheck"
+                  android:layout_marginRight="50dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:layout_alignParentRight="true"
+                  android:src="@mipmap/checkmark"
+                  />
+
+
+          </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/checkColor"></View>
+    <RelativeLayout
+          android:id="@+id/mRelatReputation"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        >
+        <TextView
+            android:id="@+id/mReputation"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:text="好评优先"/>
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/mImageReputation"
+            android:layout_marginRight="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/checkmark"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.2dp"
+        android:background="@color/checkColor"></View>
+    <RelativeLayout
+        android:id="@+id/mRelatPriority"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        >
+        <TextView
+            android:id="@+id/mOrderPriority"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:text="订单优先"/>
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/mImagePriority"
+            android:layout_marginRight="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/checkmark"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.2dp"
+        android:background="@color/checkColor"></View>
+    <RelativeLayout
+        android:id="@+id/mRelatPrice"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        >
+        <TextView
+            android:id="@+id/mPrice"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:text="价格从高到低"/>
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/mImagePrice"
+            android:layout_marginRight="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/checkmark"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.2dp"
+        android:background="@color/checkColor"></View>
+
+    <RelativeLayout
+        android:id="@+id/mRelatPriceLow"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        >
+        <TextView
+            android:id="@+id/mLowPrice"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:text="价格从低到高"/>
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/mImagelow"
+            android:layout_marginRight="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/checkmark"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/checkColor"></View>
+
+</LinearLayout>

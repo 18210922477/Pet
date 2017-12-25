@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/home_select</item>
+    </style>
+    <style name="CradRatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#666666</item>
+        <item name="colorControlActivated">#f68d4f</item>
+    </style>
+ <!--   <style name="TabSizeBold"  parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+          <item name="textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>-->
+
+</resources>

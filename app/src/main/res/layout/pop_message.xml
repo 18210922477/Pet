@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:background="@drawable/shape2"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#15658734" />
+
+    <TextView
+        android:id="@+id/toCallme"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="联系他"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#15658734" />
+
+    <TextView
+        android:id="@+id/toCallphone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="拨打电话"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#15658734" />
+
+    <TextView
+        android:id="@+id/toMessage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="发送信息"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#15658734" />
+    <TextView
+        android:id="@+id/mReturn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp" />
+
+</LinearLayout>
